@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{% static 'employee/css/style.css' %}"/>
 </head>
 <body>
-<form method="POST" class="post-form" action="/emp">
+<form method="POST" class="post-form" action="{% url 'emp' %}">
         {% csrf_token %}
     <div class="container">
 <br>
